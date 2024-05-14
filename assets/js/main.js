@@ -80,9 +80,10 @@
 		windowOn.on('scroll', function () {
 			var currentScrollTop = $(this).scrollTop();
 
-			if (currentScrollTop > lastScrollTop) {
-				$('.tp-int-menu').removeClass('tp-header-pinned');
-			} else if ($(this).scrollTop() <= 500) {
+			// if (currentScrollTop > lastScrollTop) {
+			// 	$('.tp-int-menu').removeClass('tp-header-pinned');
+			// } else 
+			if ($(this).scrollTop() <= 500) {
 				$('.tp-int-menu').removeClass('tp-header-pinned');
 			} else {
 				// Scrolling up, remove the class
@@ -814,6 +815,45 @@
 		]
 	});
 
+	// Anasayfa haberler slide
+	$('.home-slider').slick({
+		slidesToShow: 3,
+		infinite: false,
+		arrows: true,
+		buttons: true,
+		centerPadding: '120px',
+		prevArrow: `<button type="button" class="tp-slider-3-button-prev"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+		   <path d="M1.00073 6.99989L15 6.99989" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		   <path d="M6.64648 1.5L1.00011 6.99954L6.64648 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`,
+		nextArrow: `<button type="button" class="tp-slider-3-button-next"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M14.9993 6.99989L1 6.99989" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M9.35352 1.5L14.9999 6.99954L9.35352 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg></button>`,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
 
 	////////////////////////////////////////////////////
 	// 15. Masonary Js
