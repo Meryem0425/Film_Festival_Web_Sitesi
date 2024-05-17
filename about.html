@@ -73,8 +73,8 @@
         <div class="tp-offcanvas-left">
           <div class="tp-offcanvas-left-wrap d-flex justify-content-between align-items-center">
             <div class="tpoffcanvas__logo">
-              <img class="logo-white" src="assets/img/logo/yalova_logo_1.png" alt="" />
-              <img class="logo-black" src="assets/img/logo/yalova_logo_1.png" alt="" />
+              <img class="logo" src="assets/img/logo/yalova_logo_1.png" alt="" />
+              <!-- <img class="logo-black" src="assets/img/logo/yalova_logo_1.png" alt="" /> -->
             </div>
             <div class="tp-offcanvas-close d-md-none text-end">
               <button class="tp-offcanvas-close-btn tp-offcanvas-close-btn">
@@ -145,29 +145,44 @@
           <div class="row align-items-center">
             <div class="col-xl-2 col-lg-6 col-md-6 col-6">
               <div class="tp-header-3__logo">
-                <a class="logo-white" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
-                <a class="logo-black" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
+                <a class="logo" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
+                <!-- <a class="logo-black" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a> -->
               </div>
             </div>
             <!--navbar kısmı -->
             <div class="col-lg-7 d-none d-xl-block">
               <div class="tp-header-4__menu text-center">
+
+                <!-- Geniş ekranlardaki menü -->
                 <nav class="navbar navbar-expand-lg navbar-landing navbar-light" id="navbar">
                   <ul>
                     <li class="has-dropdown p-static">
                       <a>Festival</a>
                       <ul class="tp-submenu submenu">
                         <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="regulations.html">Yönetmelikler</a></li>
-                        <li><a href="bulletin.html">Bültenler</a></li>
-                        <li><a href="news.html">Haberler</a></li>
-                        <li><a href="interviews.html">Röpartajlar</a></li>
-                        <li><a href="awards.html">Ödüller</a></li>
+                        <li><a href="committees.html">Komiteler</a></li>
+                        <li>
+                          <a class="has-dropdown">Bültenler</a>
+                          <ul class="tp-submenu submenu">
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Haziran Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
                       </ul>
                     </li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="awards.html">Ödüller</a></li>
                     <li>
-                      <a>Yarışmalar</a>
-                      <ul class="tp-submenu submenu">
+                      <a href="Competitions.html">Yarışmalar</a>
+                      <!-- <ul class="tp-submenu submenu">
                         <li>
                           <a href="competitions_1.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
                         </li>
@@ -177,22 +192,16 @@
                         <li>
                           <a href="competitions_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
                         </li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li>
                       <a>Programlar</a>
                       <ul class="tp-submenu submenu">
                         <li>
-                          <a href="1st_Yalova_Film_Festival_Catalog.html">1.Yalova Film Festivali Kataloğu</a>
+                          <a href="movie_program.html">Film Programı</a>
                         </li>
                         <li>
-                          <a href="movie festival.html">Film Festivali</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Gösterim Göstergesi</a>
-                        </li>
-                        <li>
-                          <a href="display_Indicator.html">Etkinlikler</a>
+                          <a href="show_program.html">Gösterim Programı</a>
                         </li>
                       </ul>
                     </li>
@@ -203,99 +212,103 @@
                       <a>Filmler</a>
                       <ul class="tp-submenu submenu">
                         <li>
-                          <a href="movie_1.html">Ulusal Uzun Metraj Belgesel Filmi</a>
+                          <a href="movies.html">Uzun Metraj Belgesel</a>
                         </li>
                         <li>
-                          <a href="movie_2.html">Ulusal Kısa Metraj Belgesel Filmi</a>
+                          <a href="movies.html">Kısa Metraj Belgesel</a>
                         </li>
                         <li>
-                          <a href="movie_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı Ulusal Belgesel Film Yarışması</a>
+                          <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown">
-                      <a>Atölyeler</a>
-                      <ul class="tp-submenu submenu">
-                        <li><a href="workshop_1.html">Atölye 1</a></li>
-                        <li><a href="workshop_2.html">Atölye 2</a></li>
-                        <li><a href="workshop_3.html">Atölye 3</a></li>
-                      </ul>
+                      <a href="events.html">Etkinlikler</a>
                     </li>
                     <li class="has-dropdown">
                       <a href="sponsors.html">Sponsorlar</a>
                     </li>
                   </ul>
                 </nav>
+
+
+                <!-- Mobil menü navbar -->
                 <div class="offcanvas-menu-style d-none">
                   <nav class="tp-main-menu-content">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="#">Festival</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="index.html">Hakkımızda</a></li>
-                          <li><a href="index.html">Yönetmenlikler</a></li>
-                          <li><a href="index.html">Bültenler</a></li>
-                          <li><a href="index.html">Haberler</a></li>
-                          <li><a href="index.html">Röpartajlar</a></li>
-                          <li><a href="index.html">Ödüller</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="index.html">Yarışmalar</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="index.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
-                          </li>
-                          <li>
-                            <a href="index.html">Ulusal Kısa Metraj Belgesel Film Yarışması</a>
-                          </li>
-                          <li>
-                            <a href="index.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.M. Film Yarışması</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="index.html">Programlar</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="index.html">1.Yalova Film Festivali Kataloğu</a>
-                          </li>
-                          <li><a href="index.html">Film Festivali</a></li>
-                          <li><a href="index.html">Gösterim Göstergesi</a></li>
-                          <li><a href="index.html">Etkinlikler</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="about-me.html">Juriler</a>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="service.html">Filmler</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="service.html">Ulusal Uzun Metraj Belgesel Filmi</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Ulusal Kısa Metraj Belgesel Filmi</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Yalova Kültürel Miras Ve Tanıtım Temalı Ulusal Belgesel Film Yarışması</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="portfolio.html">Atölyeler</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="portfolio.html">Atölye 1</a></li>
-                          <li><a href="portfolio-details.html">Atölye 2</a></li>
-                          <li>
-                            <a href="portfolio-details-2.html">Atölye 3</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="portfolio.html">Sponsorlar</a>
-                      </li>
-                    </ul>
+                  <ul>
+                    <li class="has-dropdown p-static">
+                      <a href="#">Festival</a>
+                      <ul class="tp-submenu submenu">
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="committees.html">Komiteler</a></li>
+                        <li class="has-dropdown p-static">
+                          <a href="#">Bültenler</a>
+                          <ul class="tp-submenu submenu">
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Haziran Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
+                      </ul>
+                    </li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="awards.html">Ödüller</a></li>
+                    <li>
+                      <a href="Competitions.html">Yarışmalar</a>
+                      <!-- <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="competitions_1.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
+                        </li>
+                        <li>
+                          <a href="competitions_2.html">Ulusal Kısa Metraj Belgesel Film Yarışması</a>
+                        </li>
+                        <li>
+                          <a href="competitions_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="#">Programlar</a>
+                      <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="movie_program.html">Film Programı</a>
+                        </li>
+                        <li>
+                          <a href="show_program.html">Gösterim Programı</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="juries.html">Juriler</a>
+                    </li>
+                    <li class="has-dropdown">
+                      <a href="#">Filmler</a>
+                      <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="movies.html">Uzun Metraj Belgesel</a>
+                        </li>
+                        <li>
+                          <a href="movies.html">Kısa Metraj Belgesel</a>
+                        </li>
+                        <li>
+                          <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="events.html">Etkinlikler</a>
+                    </li>
+                    <li>
+                      <a href="sponsors.html">Sponsorlar</a>
+                    </li>
+                  </ul>
                   </nav>
                 </div>
               </div>
@@ -336,265 +349,32 @@
       <!-- header area end -->
     </header>
     <!-- Önyüzdeki Header Bitiş -->
-    <header>
-      <!-- Kaydırırken Gelen Header Başlangıç -->
-      <div class="tp-header-4__area tp-header-transparent tp-header-4__mob-ptb tp-header-4__plr tp-int-menu tp-header-sticky-cloned">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-xl-2 col-lg-6 col-md-6 col-6 p-2">
-              <div class="tp-header-3__logo">
-                <a class="logo-white" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
-                <a class="logo-black" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
-              </div>
-            </div>
-            <div class="col-xl-7 d-none d-xl-block">
-              <div class="tp-header-4__menu text-center">
-                <nav>
-                  <ul>
-                    <li class="has-dropdown p-static">
-                      <a href="index.html">Festival</a>
-                      <ul class="tp-submenu submenu">
-                        <li><a href="service-details.html">Hakkımızda</a></li>
-                        <li>
-                          <a href="service-details.html">Yönetmenlikler</a>
-                        </li>
-                        <li><a href="service-details.html">Bültenler</a></li>
-                        <li><a href="service-details.html">Haberler</a></li>
-                        <li><a href="service-details.html">Röpartajlar</a></li>
-                        <li><a href="service-details.html">Ödüller</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about-me.html">Yarışmalar</a>
-                      <ul class="tp-submenu submenu">
-                        <li>
-                          <a href="service-details.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Ulusal Kısa Metraj Belgesel Film Yarışması</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about-me.html">Programlar</a>
-                      <ul class="tp-submenu submenu">
-                        <li>
-                          <a href="service-details.html">1.Yalova Film Festivali Kataloğu</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Film Festivali</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Gösterim Göstergesi</a>
-                        </li>
-                        <li><a href="service-details.html">Etkinlikler</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="portfolio.html">Juriler</a>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="blog.html">Filmler</a>
-                      <ul class="tp-submenu submenu">
-                        <li>
-                          <a href="blog.html">Ulusal Uzun Metraj Belgesel Filmi</a>
-                        </li>
-                        <li>
-                          <a href="blog-sidebar.html">Ulusal Kısa Metraj Belgesel Filmi</a>
-                        </li>
-                        <li>
-                          <a href="blog-details.html">Yalova Kültürel Miras Ve Tanıtım Temalı Ulusal Belgesel Film Yarışması</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="blog.html">Atölyeler</a>
-                      <ul class="tp-submenu submenu">
-                        <li><a href="blog.html">Atölye 1</a></li>
-                        <li><a href="blog-sidebar.html">Atölye 2</a></li>
-                        <li><a href="blog-details.html">Atölye 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="blog.html">Sponsorlar</a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="offcanvas-menu-style d-none">
-                  <nav class="tp-main-menu-content">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="index.html">Home</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="index.html">Freelancer</a></li>
-                          <li><a href="index-5.html">Fashion Designer</a></li>
-                          <li><a href="index-4.html">Photographer</a></li>
-                          <li><a href="index-2.html">Interface Designer</a></li>
-                          <li><a href="index-3.html">Web Developer</a></li>
-                          <li><a href="home-8-slider.html">Slider Metro</a></li>
-                          <li>
-                            <a href="home-7-slider.html">Slider Elegant</a>
-                          </li>
-                          <li>
-                            <a href="home-6-slider.html">Slider Classic</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="about-me.html">About Me</a></li>
-                      <li class="has-dropdown">
-                        <a href="service.html">Services</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="service.html">Service</a></li>
-                          <li>
-                            <a href="service-details.html">Service Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="portfolio.html">Portfolio</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="portfolio.html">Porfolio</a></li>
-                          <li>
-                            <a href="portfolio-details.html">Portfolio Details</a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-2.html">Portfolio Details 02</a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details-3.html">Portfolio Details 03</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="blog.html">Blog</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="blog.html">Blog List</a></li>
-                          <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                          <li>
-                            <a href="blog-details-2.html">Blog Details 02</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-6">
-              <div class="tp-header-3__right-action d-flex align-items-center justify-content-end">
-                <div class="tp-theme-toggle-single" style="display: none">
-                  <label class="tp-theme-toggle-main themepure-theme-toggle">
-                    <span class="dark">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M14 7.63063C13.8774 8.95738 13.3795 10.2218 12.5645 11.2759C11.7495 12.33 10.6512 13.1301 9.39801 13.5828C8.14485 14.0354 6.78869 14.1218 5.48822 13.8319C4.18775 13.5419 2.99676 12.8875 2.05461 11.9454C1.11246 11.0032 0.458115 9.81225 0.168141 8.51178C-0.121832 7.21131 -0.0354396 5.85515 0.41721 4.60199C0.86986 3.34883 1.67005 2.2505 2.72413 1.43552C3.77822 0.620536 5.04262 0.122609 6.36937 0C5.5926 1.05088 5.21881 2.34566 5.31599 3.64884C5.41317 4.95202 5.97487 6.17704 6.89892 7.10109C7.82296 8.02513 9.04798 8.58683 10.3512 8.68401C11.6543 8.78119 12.9491 8.4074 14 7.63063Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </span>
-                    <input type="checkbox" class="themepure-theme-toggle-input" />
-                  </label>
-                </div>
-                <div class="tp-header-3__btn d-none d-md-block">
-                  <a class="tp-btn-white" href="contact.html">
-                    İletişim
-                    <span>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.9297 10.3651C5.12061 10.2162 5.29376 10.043 5.64006 9.69671L9.95722 5.37954C10.0616 5.27517 10.0138 5.0954 9.87438 5.04702C9.36479 4.87022 8.70189 4.53829 8.0818 3.9182C7.46171 3.29811 7.12978 2.63521 6.95299 2.12562C6.9046 1.98617 6.72483 1.9384 6.62046 2.04278L2.30329 6.35994L2.30328 6.35995C1.95699 6.70624 1.78385 6.87939 1.63494 7.0703C1.45928 7.29551 1.30868 7.53919 1.18581 7.79701C1.08164 8.01558 1.00421 8.24789 0.849336 8.71249L0.649225 9.31283L0.331026 10.2674L0.0326691 11.1625C-0.0435433 11.3911 0.0159628 11.6432 0.186379 11.8136C0.356795 11.984 0.608868 12.0435 0.837505 11.9673L1.73258 11.669L2.68717 11.3508L3.28751 11.1507C3.75211 10.9958 3.98442 10.9184 4.20299 10.8142C4.46082 10.6913 4.70449 10.5407 4.9297 10.3651Z"
-                          fill="currentcolor"
-                        />
-                        <path
-                          d="M11.3089 4.02783C12.2304 3.10641 12.2304 1.61249 11.3089 0.691067C10.3875 -0.230356 8.89359 -0.230356 7.97217 0.691067L7.83337 0.82986C7.69944 0.963792 7.63876 1.15087 7.67222 1.3373C7.69327 1.45458 7.73229 1.62603 7.80327 1.83063C7.94522 2.23979 8.21329 2.77689 8.7182 3.2818C9.22311 3.78671 9.76021 4.05478 10.1694 4.19673C10.374 4.26772 10.5454 4.30673 10.6627 4.32778C10.8491 4.36124 11.0362 4.30056 11.1701 4.16663L11.3089 4.02783Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="tp-header-3__bar">
-                  <button class="tp-menu-bar tp-offcanvas-open-btn">
-                    <svg width="32" height="32" viewBox="0 0 32 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M31 0H1" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path>
-                      <path d="M31 8H1" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path>
-                      <path d="M31 16H1" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- header area start -->
-    </header>
-
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>
-          <div style="height: 400px; background-image: url(assets/img/menu/timer.jpg); display: flex; align-items: flex-end; padding-left: 200px">
-            <h4 class="contact-inner__title tp-char-animation tp-hero-3__content">Hakkımızda</h4>
+          <!-- blog area start -->
+          <div class="blog-standard__area pt-200">
+            <div class="container">
+              <div class="row">
+                <div class="blog-list__title-box">
+                  <!-- <span
+                    class="blog-list__subtitle tp-char-animation"
+                    style="perspective: 300px"
+                    >deneme</span
+                  > -->
+                  <h4 class="blog-list__title tp-char-animation">Hakkımızda</h4>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- blog area end -->
           <section class="postbox-details__area pt-100 pb-100">
             <div class="container">
               <div class="row">
-                <div class="col-xxl-2 col-xl-2 col-lg-2">
-                  <div class="postbox-details-4__social-wrap tp-blog-social-sticky">
-                    <div>
-                      <p>Share :</p>
-                    </div>
-                    <div class="postbox-details-4__top-social">
-                      <a href="#">
-                        <span>
-                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M7.7 0H5.6C4.67174 0 3.7815 0.368749 3.12513 1.02513C2.46875 1.6815 2.1 2.57174 2.1 3.5V5.6H0V8.4H2.1V14H4.9V8.4H7L7.7 5.6H4.9V3.5C4.9 3.31435 4.97375 3.1363 5.10503 3.00503C5.2363 2.87375 5.41435 2.8 5.6 2.8H7.7V0Z"
-                              fill="currentcolor"
-                              fill-opacity="0.7"
-                            />
-                          </svg>
-                        </span>
-                      </a>
-                      <a href="#">
-                        <span>
-                          <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M13 0.00594201C12.4341 0.405088 11.8076 0.71037 11.1445 0.910033C10.7887 0.500835 10.3157 0.210805 9.78961 0.0791711C9.26353 -0.0524632 8.7097 -0.0193515 8.20305 0.174028C7.69639 0.367408 7.26135 0.711725 6.95676 1.16041C6.65217 1.6091 6.49273 2.1405 6.5 2.68276V3.27367C5.46156 3.3006 4.43257 3.07029 3.50469 2.60325C2.5768 2.13622 1.77882 1.44695 1.18182 0.596851C1.18182 0.596851 -1.18182 5.91503 4.13636 8.27867C2.9194 9.10474 1.46968 9.51895 0 9.46049C5.31818 12.415 11.8182 9.46049 11.8182 2.66503C11.8176 2.50044 11.8018 2.33625 11.7709 2.17458C12.374 1.57982 12.7996 0.828909 13 0.00594201Z"
-                              fill="currentcolor"
-                              fill-opacity="0.7"
-                            />
-                          </svg>
-                        </span>
-                      </a>
-                      <a href="#">
-                        <span>
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M7.93792 3.78955C8.94295 3.78955 9.90682 4.1888 10.6175 4.89946C11.3282 5.61013 11.7274 6.574 11.7274 7.57903V12.0001H9.20108V7.57903C9.20108 7.24402 9.068 6.92273 8.83111 6.68584C8.59422 6.44896 8.27293 6.31587 7.93792 6.31587C7.60291 6.31587 7.28162 6.44896 7.04473 6.68584C6.80784 6.92273 6.67476 7.24402 6.67476 7.57903V12.0001H4.14844V7.57903C4.14844 6.574 4.54769 5.61013 5.25835 4.89946C5.96902 4.1888 6.93289 3.78955 7.93792 3.78955Z"
-                              fill="currentcolor"
-                              fill-opacity="0.7"
-                            />
-                            <path d="M2.52632 4.4209H0V11.9999H2.52632V4.4209Z" fill="currentcolor" fill-opacity="0.7" />
-                            <path
-                              d="M1.26316 2.52632C1.96079 2.52632 2.52632 1.96079 2.52632 1.26316C2.52632 0.565536 1.96079 0 1.26316 0C0.565536 0 0 0.565536 0 1.26316C0 1.96079 0.565536 2.52632 1.26316 2.52632Z"
-                              fill="currentcolor"
-                              fill-opacity="0.7"
-                            />
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="col-12">
                   <div class="postbox-details__wrapper tp-blog-sidebar-sticky-area tp-blog-social-sticky-area p-relative">
-                    <div class="pin-spacer">
+                    <!-- Sosyal medya -->
+                    <!-- <div class="pin-spacer">
                       <div class="postbox-details__top-social tp-blog-social-sticky d-none d-xxl-inline-flex">
                         <a href="#">
                           <span>
@@ -636,7 +416,7 @@
                           </span>
                         </a>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="postbox-details__text">
                       <p class="tp-dropcap pb-10">
                         Q Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed eget viverra egestas nisi in consequat. As technology continues to advance at a rapid
@@ -690,215 +470,6 @@
                         three elements are helping to improve the overall work experience for employees and customers alike."
                       </p>
                     </div>
-                    <div class="tp-port-3-thumb-right cursor-style detail-slider white-bg-2">
-                      <div class="tp-port-3-thumb m-4">
-                        <img src="assets/img/portfolio-details-3/port-1.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
-                        <img src="assets/img/portfolio-details-3/port-2.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
-                        <img src="assets/img/portfolio-details-3/port-3.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
-                        <img src="assets/img/portfolio-details-3/port-4.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="tagcloud py-4">
-                      <a href="#">symphony</a>
-                      <a href="#">nokia</a>
-                      <a href="#">tech</a>
-                      <a href="#">Samsung</a>
-                      <a href="#">Alcatel</a>
-                    </div>
-                    <div class="postbox-details__author-info-box mb-95 p-relative">
-                      <div class="postbox-details__author-wrap d-flex align-items-center">
-                        <!-- <div class="postbox-details__author-avata">
-                          <img src="assets/img/users/user24.jpg" alt="" />
-                        </div> -->
-                        <div class="postbox-details__author-content">
-                          <h4>Alison Baker</h4>
-                          <p>
-                            Digital content wrangler I UX enthusiast I Recovering educator I <br />
-                            Shameless nerd &amp; GIF connoisseur I Hockey fan.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="postbox-details__author-social-wrap">
-                        <div class="postbox-details__author-social-link">
-                          <a href="#">
-                            <span>
-                              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M7.7 0H5.6C4.67174 0 3.7815 0.368749 3.12513 1.02513C2.46875 1.6815 2.1 2.57174 2.1 3.5V5.6H0V8.4H2.1V14H4.9V8.4H7L7.7 5.6H4.9V3.5C4.9 3.31435 4.97375 3.1363 5.10503 3.00503C5.2363 2.87375 5.41435 2.8 5.6 2.8H7.7V0Z"
-                                  fill="currentcolor"
-                                  fill-opacity="0.7"
-                                ></path>
-                              </svg>
-                            </span>
-                          </a>
-                          <a href="#">
-                            <span>
-                              <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M13 0.00594201C12.4341 0.405088 11.8076 0.71037 11.1445 0.910033C10.7887 0.500835 10.3157 0.210805 9.78961 0.0791711C9.26353 -0.0524632 8.7097 -0.0193515 8.20305 0.174028C7.69639 0.367408 7.26135 0.711725 6.95676 1.16041C6.65217 1.6091 6.49273 2.1405 6.5 2.68276V3.27367C5.46156 3.3006 4.43257 3.07029 3.50469 2.60325C2.5768 2.13622 1.77882 1.44695 1.18182 0.596851C1.18182 0.596851 -1.18182 5.91503 4.13636 8.27867C2.9194 9.10474 1.46968 9.51895 0 9.46049C5.31818 12.415 11.8182 9.46049 11.8182 2.66503C11.8176 2.50044 11.8018 2.33625 11.7709 2.17458C12.374 1.57982 12.7996 0.828909 13 0.00594201Z"
-                                  fill="currentcolor"
-                                  fill-opacity="0.7"
-                                ></path>
-                              </svg>
-                            </span>
-                          </a>
-                          <a href="#">
-                            <span>
-                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M7.93792 3.78955C8.94295 3.78955 9.90682 4.1888 10.6175 4.89946C11.3282 5.61013 11.7274 6.574 11.7274 7.57903V12.0001H9.20108V7.57903C9.20108 7.24402 9.068 6.92273 8.83111 6.68584C8.59422 6.44896 8.27293 6.31587 7.93792 6.31587C7.60291 6.31587 7.28162 6.44896 7.04473 6.68584C6.80784 6.92273 6.67476 7.24402 6.67476 7.57903V12.0001H4.14844V7.57903C4.14844 6.574 4.54769 5.61013 5.25835 4.89946C5.96902 4.1888 6.93289 3.78955 7.93792 3.78955Z"
-                                  fill="currentcolor"
-                                  fill-opacity="0.7"
-                                ></path>
-                                <path d="M2.52632 4.4209H0V11.9999H2.52632V4.4209Z" fill="currentcolor" fill-opacity="0.7"></path>
-                                <path
-                                  d="M1.26316 2.52632C1.96079 2.52632 2.52632 1.96079 2.52632 1.26316C2.52632 0.565536 1.96079 0 1.26316 0C0.565536 0 0 0.565536 0 1.26316C0 1.96079 0.565536 2.52632 1.26316 2.52632Z"
-                                  fill="currentcolor"
-                                  fill-opacity="0.7"
-                                ></path>
-                              </svg>
-                            </span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Yorumlar -->
-                    <!-- <div class="postbox__comment mb-95">
-                      <h3 class="postbox__comment-title">3 Comments</h3>
-                      <ul>
-                        <li>
-                          <div class="postbox__comment-box d-flex">
-                            <div class="postbox__comment-info">
-                              <div class="postbox__comment-avater mr-20">
-                                <img src="assets/img/users/avata-1.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="postbox__comment-text">
-                              <div class="postbox__comment-name">
-                                <h5>Justin Case</h5>
-                                <span class="post-meta"> April 8, 2024 at 7:38 am</span>
-                              </div>
-                              <p>
-                                Patient Comments are a collection of comments submitted by viewers in <br />
-                                response to a question posed by a MedicineNet doctor.
-                              </p>
-                              <div class="postbox__comment-reply">
-                                <a href="#">
-                                  <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                                  </svg>
-                                  Reply
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="children">
-                          <div class="postbox__comment-box d-flex">
-                            <div class="postbox__comment-info">
-                              <div class="postbox__comment-avater mr-20">
-                                <img src="assets/img/users/user24.jpg" alt="" />
-                              </div>
-                            </div>
-                            <div class="postbox__comment-text">
-                              <div class="postbox__comment-name">
-                                <h5>Farhan Firoz</h5>
-                                <span class="post-meta"> July 14, 2022 at 9:58 am</span>
-                              </div>
-                              <p>Include anecdotal examples of your experience, or things you took notice of that you feel others would find useful.</p>
-                              <div class="postbox__comment-reply">
-                                <a href="#">
-                                  <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                                  </svg>
-                                  Reply
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="postbox__comment-box d-flex">
-                            <div class="postbox__comment-info">
-                              <div class="postbox__comment-avater mr-20">
-                                <img src="assets/img/users/avata-3.png" alt="" />
-                              </div>
-                            </div>
-                            <div class="postbox__comment-text">
-                              <div class="postbox__comment-name">
-                                <h5>Justin Case</h5>
-                                <span class="post-meta"> May 12, 2024 at 4:38 pm</span>
-                              </div>
-                              <p>
-                                Patient Comments are a collection of comments submitted by viewers in <br />
-                                response to a question posed by a MedicineNet doctor.
-                              </p>
-                              <div class="postbox__comment-reply">
-                                <a href="#">
-                                  <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-                                  </svg>
-                                  Reply
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="postbox__comment-form">
-                      <h3 class="postbox__comment-form-title">Leave a Reply</h3>
-                      <form action="#" class="box">
-                        <div class="row gx-20">
-                          <div class="col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="postbox__comment-input mb-35">
-                              <input type="text" class="inputText" required="" wfd-id="id2" />
-                              <span class="floating-label">Your Name</span>
-                              <span class="floating-label">Your Name</span>
-                            </div>
-                          </div>
-                          <div class="col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="postbox__comment-input mb-35">
-                              <input type="text" class="inputText" required="" wfd-id="id3" />
-                              <span class="floating-label">Your Email</span>
-                            </div>
-                          </div>
-                          <div class="col-xxl-12">
-                            <div class="postbox__comment-input mb-20">
-                              <textarea class="textareaText" required=""></textarea>
-                              <span class="floating-label-2">Your Comment</span>
-                            </div>
-                          </div>
-                          <div class="col-xxl-12">
-                            <div class="postbox__comment-agree">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" wfd-id="id4" />
-                                <label class="form-check-label" for="flexCheckDefault"> I agree that my submitted data is being collected and stored. </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xxl-12">
-                            <div class="postbox__comment-btn">
-                              <button type="submit" class="tp-btn-white-lg">
-                                <span>
-                                  <i>Post comment</i>
-                                </span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div> -->
-                    <!-- Yorumlar bitiş -->
                   </div>
                 </div>
               </div>

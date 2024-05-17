@@ -73,8 +73,8 @@
         <div class="tp-offcanvas-left">
           <div class="tp-offcanvas-left-wrap d-flex justify-content-between align-items-center">
             <div class="tpoffcanvas__logo">
-              <img class="logo-white" src="assets/img/logo/yalova_logo_1.png" alt="" />
-              <img class="logo-black" src="assets/img/logo/yalova_logo_1.png" alt="" />
+              <img class="logo" src="assets/img/logo/yalova_logo_1.png" alt="" />
+              <!-- <img class="logo-black" src="assets/img/logo/yalova_logo_1.png" alt="" /> -->
             </div>
             <div class="tp-offcanvas-close d-md-none text-end">
               <button class="tp-offcanvas-close-btn tp-offcanvas-close-btn">
@@ -145,29 +145,44 @@
           <div class="row align-items-center">
             <div class="col-xl-2 col-lg-6 col-md-6 col-6">
               <div class="tp-header-3__logo">
-                <a class="logo-white" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
-                <a class="logo-black" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
+                <a class="logo" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a>
+                <!-- <a class="logo-black" href="home.html"><img src="assets/img/logo/yalova_logo_1.png" alt="" /></a> -->
               </div>
             </div>
             <!--navbar kısmı -->
             <div class="col-lg-7 d-none d-xl-block">
               <div class="tp-header-4__menu text-center">
+
+                <!-- Geniş ekranlardaki menü -->
                 <nav class="navbar navbar-expand-lg navbar-landing navbar-light" id="navbar">
                   <ul>
                     <li class="has-dropdown p-static">
                       <a>Festival</a>
                       <ul class="tp-submenu submenu">
                         <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="regulations.html">Yönetmelikler</a></li>
-                        <li><a href="bulletin.html">Bültenler</a></li>
-                        <li><a href="news.html">Haberler</a></li>
-                        <li><a href="interviews.html">Röpartajlar</a></li>
-                        <li><a href="awards.html">Ödüller</a></li>
+                        <li><a href="committees.html">Komiteler</a></li>
+                        <li>
+                          <a class="has-dropdown">Bültenler</a>
+                          <ul class="tp-submenu submenu">
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Haziran Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
                       </ul>
                     </li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="awards.html">Ödüller</a></li>
                     <li>
-                      <a>Yarışmalar</a>
-                      <ul class="tp-submenu submenu">
+                      <a href="Competitions.html">Yarışmalar</a>
+                      <!-- <ul class="tp-submenu submenu">
                         <li>
                           <a href="competitions_1.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
                         </li>
@@ -177,22 +192,16 @@
                         <li>
                           <a href="competitions_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
                         </li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li>
                       <a>Programlar</a>
                       <ul class="tp-submenu submenu">
                         <li>
-                          <a href="1st_Yalova_Film_Festival_Catalog.html">1.Yalova Film Festivali Kataloğu</a>
+                          <a href="movie_program.html">Film Programı</a>
                         </li>
                         <li>
-                          <a href="movie festival.html">Film Festivali</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">Gösterim Göstergesi</a>
-                        </li>
-                        <li>
-                          <a href="display_Indicator.html">Etkinlikler</a>
+                          <a href="show_program.html">Gösterim Programı</a>
                         </li>
                       </ul>
                     </li>
@@ -203,99 +212,103 @@
                       <a>Filmler</a>
                       <ul class="tp-submenu submenu">
                         <li>
-                          <a href="movie_1.html">Ulusal Uzun Metraj Belgesel Filmi</a>
+                          <a href="movies.html">Uzun Metraj Belgesel</a>
                         </li>
                         <li>
-                          <a href="movie_2.html">Ulusal Kısa Metraj Belgesel Filmi</a>
+                          <a href="movies.html">Kısa Metraj Belgesel</a>
                         </li>
                         <li>
-                          <a href="movie_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı Ulusal Belgesel Film Yarışması</a>
+                          <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown">
-                      <a>Atölyeler</a>
-                      <ul class="tp-submenu submenu">
-                        <li><a href="workshop_1.html">Atölye 1</a></li>
-                        <li><a href="workshop_2.html">Atölye 2</a></li>
-                        <li><a href="workshop_3.html">Atölye 3</a></li>
-                      </ul>
+                      <a href="events.html">Etkinlikler</a>
                     </li>
                     <li class="has-dropdown">
                       <a href="sponsors.html">Sponsorlar</a>
                     </li>
                   </ul>
                 </nav>
+
+
+                <!-- Mobil menü navbar -->
                 <div class="offcanvas-menu-style d-none">
                   <nav class="tp-main-menu-content">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="#">Festival</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="index.html">Hakkımızda</a></li>
-                          <li><a href="index.html">Yönetmenlikler</a></li>
-                          <li><a href="index.html">Bültenler</a></li>
-                          <li><a href="index.html">Haberler</a></li>
-                          <li><a href="index.html">Röpartajlar</a></li>
-                          <li><a href="index.html">Ödüller</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="index.html">Yarışmalar</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="index.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
-                          </li>
-                          <li>
-                            <a href="index.html">Ulusal Kısa Metraj Belgesel Film Yarışması</a>
-                          </li>
-                          <li>
-                            <a href="index.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.M. Film Yarışması</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="index.html">Programlar</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="index.html">1.Yalova Film Festivali Kataloğu</a>
-                          </li>
-                          <li><a href="index.html">Film Festivali</a></li>
-                          <li><a href="index.html">Gösterim Göstergesi</a></li>
-                          <li><a href="index.html">Etkinlikler</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="about-me.html">Juriler</a>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="service.html">Filmler</a>
-                        <ul class="tp-submenu submenu">
-                          <li>
-                            <a href="service.html">Ulusal Uzun Metraj Belgesel Filmi</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Ulusal Kısa Metraj Belgesel Filmi</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Yalova Kültürel Miras Ve Tanıtım Temalı Ulusal Belgesel Film Yarışması</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="portfolio.html">Atölyeler</a>
-                        <ul class="tp-submenu submenu">
-                          <li><a href="portfolio.html">Atölye 1</a></li>
-                          <li><a href="portfolio-details.html">Atölye 2</a></li>
-                          <li>
-                            <a href="portfolio-details-2.html">Atölye 3</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="portfolio.html">Sponsorlar</a>
-                      </li>
-                    </ul>
+                  <ul>
+                    <li class="has-dropdown p-static">
+                      <a href="#">Festival</a>
+                      <ul class="tp-submenu submenu">
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="committees.html">Komiteler</a></li>
+                        <li class="has-dropdown p-static">
+                          <a href="#">Bültenler</a>
+                          <ul class="tp-submenu submenu">
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Haziran Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
+                            </li>
+                            <li>
+                              <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
+                      </ul>
+                    </li>
+                    <li><a href="news.html">Haberler</a></li>
+                    <li><a href="awards.html">Ödüller</a></li>
+                    <li>
+                      <a href="Competitions.html">Yarışmalar</a>
+                      <!-- <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="competitions_1.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
+                        </li>
+                        <li>
+                          <a href="competitions_2.html">Ulusal Kısa Metraj Belgesel Film Yarışması</a>
+                        </li>
+                        <li>
+                          <a href="competitions_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="#">Programlar</a>
+                      <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="movie_program.html">Film Programı</a>
+                        </li>
+                        <li>
+                          <a href="show_program.html">Gösterim Programı</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="juries.html">Juriler</a>
+                    </li>
+                    <li class="has-dropdown">
+                      <a href="#">Filmler</a>
+                      <ul class="tp-submenu submenu">
+                        <li>
+                          <a href="movies.html">Uzun Metraj Belgesel</a>
+                        </li>
+                        <li>
+                          <a href="movies.html">Kısa Metraj Belgesel</a>
+                        </li>
+                        <li>
+                          <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="events.html">Etkinlikler</a>
+                    </li>
+                    <li>
+                      <a href="sponsors.html">Sponsorlar</a>
+                    </li>
+                  </ul>
                   </nav>
                 </div>
               </div>
@@ -336,9 +349,11 @@
       <!-- header area end -->
     </header>
     <!-- Önyüzdeki Header Bitiş -->
+
+    <!-- Kaydırınca gelen header (GİZLİ) -->
     <header>
       <!-- Kaydırırken Gelen Header Başlangıç -->
-      <div class="tp-header-4__area tp-header-transparent tp-header-4__mob-ptb tp-header-4__plr tp-int-menu tp-header-sticky-cloned">
+      <!-- <div class="tp-header-4__area tp-header-transparent tp-header-4__mob-ptb tp-header-4__plr tp-int-menu tp-header-sticky-cloned">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-xl-2 col-lg-6 col-md-6 col-6 p-2">
@@ -530,10 +545,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- header area start -->
     </header>
+    <!-- Kaydırınca gelen header bitiş -->
 
     <div id="smooth-wrapper">
       <div id="smooth-content">

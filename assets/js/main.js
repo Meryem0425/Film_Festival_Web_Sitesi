@@ -847,27 +847,7 @@
 		<path d="M9.35352 1.5L14.9999 6.99954L9.35352 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		</svg></button>`,
     centerMode: true,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
+    slidesToShow: 1
   });
 
   ////////////////////////////////////////////////////
@@ -2738,5 +2718,26 @@
   });
   $(".cursor-style").on("mouseleave", function () {
     $("body").removeClass("cursor-white");
+  });
+
+  var currentTab = 0;
+
+  function openTab(clickedTab) {
+    var thisTab = $(".tabbed-box .tabs a").index(clickedTab);
+    $(".tabbed-box .tabs li a").removeClass("active");
+    $(".tabbed-box .tabs li a:eq(" + thisTab + ")").addClass("active");
+    $(".tabbed-box .tabbed-content").hide();
+    $(".tabbed-box .tabbed-content:eq(" + thisTab + ")").show();
+    currentTab = thisTab;
+  }
+  $(document).ready(function () {
+    $(".tabs li:eq(0) a").css("border-left", "none");
+
+    $(".tabbed-box .tabs li a").click(function () {
+      openTab($(this));
+      return false;
+    });
+
+    $(".tabbed-box .tabs li a:eq(" + currentTab + ")").click();
   });
 })(jQuery);
