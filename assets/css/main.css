@@ -370,7 +370,6 @@ li,
   --tp-gold: #ffde59;
   --tp-gold-opacity-5: #ffde5969;
 
-
   --tp-title: #836331;
   --tp-text-primary: #d0bea2;
   --tp-text-secondary: #4d473f;
@@ -378,16 +377,15 @@ li,
   --tp-bg-primary: #e4e6dc;
   --tp-bg-secondary: #b8997d75;
   --tp-bg-light: #bbb1a975;
-   --tp-bg-dark: #413c38;
-
+  --tp-bg-dark: #413c38;
 }
-.tp-bg-primary{
+.tp-bg-primary {
   background-color: var(--tp-bg-primary);
 }
-.tp-bg-secondary{
+.tp-bg-secondary {
   background-color: var(--tp-bg-secondary);
 }
-.tp-bg-dark{
+.tp-bg-dark {
   background-color: var(--tp-bg-dark);
 }
 .flex {
@@ -22077,7 +22075,7 @@ html[tp-theme="tp-theme-light"] .postbox__comment ul li:not(:last-of-type) {
   padding-bottom: 55px;
   background: color-mix(in srgb, var(--tp-bg-light) 75%, transparent 45%);
   backdrop-filter: blur(10px);
-  scale: .9;
+  scale: 0.9;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-project-5-2-item {
@@ -24225,10 +24223,10 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   padding: 20px;
   width: 50%;
 }
-.movie_program__area article.postbox__item .postbox__content .postbox__title{
+.movie_program__area article.postbox__item .postbox__content .postbox__title {
   font-size: 1.8rem;
 }
-.movie_program__area article.postbox__item .postbox__content .postbox__text p{
+.movie_program__area article.postbox__item .postbox__content .postbox__text p {
   color: var(--tp-common-white-3);
 }
 .movie_program__area article.postbox__item .postbox__content .postbox__date {
@@ -24283,7 +24281,7 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   position: absolute;
   top: 50%;
 }
-.sponsors-title.other{
+.sponsors-title.other {
   margin-bottom: 40px;
   margin-top: 90px;
 }
@@ -24305,4 +24303,21 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   color: var(--tp-text-primary);
   margin-bottom: 15px;
   line-height: 26px;
+}
+.ab-personal-info__exprience-box.d-flex.align-items-center {
+  flex-wrap: nowrap;
+}
+@media (max-width: 900px) {
+  .tp-footer-bg.tp-footer__customize p.title {
+    font-size: 2rem;
+  }
+  .tp-footer-bg.tp-footer__customize p.description {
+    font-size: 1rem;
+  }
+  main {
+    margin-top: 75px;
+  }
+  .tp-header-3__logo img {
+    width: 75px;
+  }
 }

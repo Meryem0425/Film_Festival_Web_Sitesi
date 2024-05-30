@@ -31,18 +31,21 @@
     letter-spacing: 1px;
     font-family: Lucida Sans;
 }
-.timer{
+.timer {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     margin-top: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .sub_timer{
-    width: 220px;
     background: rgba(255, 255, 255, 0.19);
     backdrop-filter: blur(20px);
     border-radius: 20px;
     overflow: hidden;
+    flex: 0 200px;
 }
 .digit{
     color: #fff;
