@@ -2779,14 +2779,16 @@
     $(".tabbed-box .tabbed-content:eq(" + thisTab + ")").show();
     currentTab = thisTab;
   }
-  $(document).ready(function () {
-    $(".tabs li:eq(0) a").css("border-left", "none");
+  $(".tabs li:eq(0) a").css("border-left", "none");
 
-    $(".tabbed-box .tabs li a").click(function () {
-      openTab($(this));
-      return false;
-    });
+  $(".tabbed-box .tabs li a").click(function () {
+    openTab($(this));
+    return false;
+  });
 
-    $(".tabbed-box .tabs li a:eq(" + currentTab + ")").click();
+  $(".tabbed-box .tabs li a:eq(" + currentTab + ")").click();
+
+  $('[data-fancybox="gallery"]').fancybox({
+    // Fancybox ayarları burada yapılabilir
   });
 })(jQuery);

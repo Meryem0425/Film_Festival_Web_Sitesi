@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/hover-reveal.css" />
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/timer.css" />
   </head>
@@ -152,7 +153,6 @@
             <!--navbar kısmı -->
             <div class="col-lg-7 d-none d-xl-block">
               <div class="tp-header-4__menu text-center">
-
                 <!-- Geniş ekranlardaki menü -->
                 <nav class="navbar navbar-expand-lg navbar-landing navbar-light" id="navbar">
                   <ul>
@@ -231,38 +231,37 @@
                   </ul>
                 </nav>
 
-
                 <!-- Mobil menü navbar -->
                 <div class="offcanvas-menu-style d-none">
                   <nav class="tp-main-menu-content">
-                  <ul>
-                    <li class="has-dropdown p-static">
-                      <a href="#">Festival</a>
-                      <ul class="tp-submenu submenu">
-                        <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="committees.html">Komiteler</a></li>
-                        <li class="has-dropdown p-static">
-                          <a href="#">Bültenler</a>
-                          <ul class="tp-submenu submenu">
-                            <li>
-                              <a href="assets/docs/210503023_bukettosun_yff_bulten.pdf" target="_blank">Haziran Ayı Bülteni</a>
-                            </li>
-                            <li>
-                              <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
-                            </li>
-                            <li>
-                              <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
-                      </ul>
-                    </li>
-                    <li><a href="news.html">Haberler</a></li>
-                    <li><a href="awards.html">Ödüller</a></li>
-                    <li>
-                      <a href="Competitions.html">Yarışmalar</a>
-                      <!-- <ul class="tp-submenu submenu">
+                    <ul>
+                      <li class="has-dropdown p-static">
+                        <a href="#">Festival</a>
+                        <ul class="tp-submenu submenu">
+                          <li><a href="about.html">Hakkımızda</a></li>
+                          <li><a href="committees.html">Komiteler</a></li>
+                          <li class="has-dropdown p-static">
+                            <a href="#">Bültenler</a>
+                            <ul class="tp-submenu submenu">
+                              <li>
+                                <a href="assets/docs/210503023_bukettosun_yff_bulten.pdf" target="_blank">Haziran Ayı Bülteni</a>
+                              </li>
+                              <li>
+                                <a href="assets/docs/PDF.pdf" target="_blank">Eylül Ayı Bülteni</a>
+                              </li>
+                              <li>
+                                <a href="assets/docs/PDF.pdf" target="_blank">Son Bülten</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- <li><a href="interviews.html">Röpartajlar</a></li> -->
+                        </ul>
+                      </li>
+                      <li><a href="news.html">Haberler</a></li>
+                      <li><a href="awards.html">Ödüller</a></li>
+                      <li>
+                        <a href="Competitions.html">Yarışmalar</a>
+                        <!-- <ul class="tp-submenu submenu">
                         <li>
                           <a href="competitions_1.html">Ulusal Uzun Metraj Belgesel Film Yarışması</a>
                         </li>
@@ -273,42 +272,42 @@
                           <a href="competitions_3.html">Yalova Kültürel Miras Ve Tanıtım Temalı U.B.F. Yarışması</a>
                         </li>
                       </ul> -->
-                    </li>
-                    <li>
-                      <a href="#">Programlar</a>
-                      <ul class="tp-submenu submenu">
-                        <li>
-                          <a href="movie_program.html">Film Programı</a>
-                        </li>
-                        <li>
-                          <a href="show_program.html">Gösterim Programı</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="juries.html">Juriler</a>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="#">Filmler</a>
-                      <ul class="tp-submenu submenu">
-                        <li>
-                          <a href="movies.html">Uzun Metraj Belgesel</a>
-                        </li>
-                        <li>
-                          <a href="movies.html">Kısa Metraj Belgesel</a>
-                        </li>
-                        <li>
-                          <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="events.html">Etkinlikler</a>
-                    </li>
-                    <li>
-                      <a href="sponsors.html">Sponsorlar</a>
-                    </li>
-                  </ul>
+                      </li>
+                      <li>
+                        <a href="#">Programlar</a>
+                        <ul class="tp-submenu submenu">
+                          <li>
+                            <a href="movie_program.html">Film Programı</a>
+                          </li>
+                          <li>
+                            <a href="show_program.html">Gösterim Programı</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="juries.html">Juriler</a>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="#">Filmler</a>
+                        <ul class="tp-submenu submenu">
+                          <li>
+                            <a href="movies.html">Uzun Metraj Belgesel</a>
+                          </li>
+                          <li>
+                            <a href="movies.html">Kısa Metraj Belgesel</a>
+                          </li>
+                          <li>
+                            <a href="movies.html">Kültürel Miras Ve Tanıtım</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="events.html">Etkinlikler</a>
+                      </li>
+                      <li>
+                        <a href="sponsors.html">Sponsorlar</a>
+                      </li>
+                    </ul>
                   </nav>
                 </div>
               </div>
@@ -470,18 +469,18 @@
                       </p>
                     </div>
                     <div class="tp-port-3-thumb-right cursor-style detail-slider white-bg-2">
-                      <div class="tp-port-3-thumb m-4">
+                      <a href="assets/img/portfolio-details-3/port-1.jpg" class="tp-port-3-thumb m-4" data-fancybox="gallery">
                         <img src="assets/img/portfolio-details-3/port-1.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
+                      </a>
+                      <a href="assets/img/portfolio-details-3/port-2.jpg" class="tp-port-3-thumb m-4" data-fancybox="gallery">
                         <img src="assets/img/portfolio-details-3/port-2.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
+                      </a>
+                      <a href="assets/img/portfolio-details-3/port-3.jpg" class="tp-port-3-thumb m-4" data-fancybox="gallery">
                         <img src="assets/img/portfolio-details-3/port-3.jpg" alt="" />
-                      </div>
-                      <div class="tp-port-3-thumb m-4">
+                      </a>
+                      <a href="assets/img/portfolio-details-3/port-4.jpg" class="tp-port-3-thumb m-4" data-fancybox="gallery">
                         <img src="assets/img/portfolio-details-3/port-4.jpg" alt="" />
-                      </div>
+                      </a>
                     </div>
                     <div class="tagcloud py-4">
                       <a href="#">symphony</a>
@@ -1028,7 +1027,7 @@
                       </ul>
                     </div>
                   </div>
-                  
+
                   <div class="col-xl-2 col-lg-2 col-md-4 col-6 mb-40">
                     <div class="tp-footer-4__widget footer-col-4-4">
                       <h4 class="tp-footer-4__widget-title">İletişim</h4>
@@ -1090,6 +1089,7 @@
 
     <script src="assets/js/theme-settings.js"></script>
     <script src="assets/js/animated-headline.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/tp-cursor.js"></script>
   </body>

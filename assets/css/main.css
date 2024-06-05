@@ -24368,10 +24368,10 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-size: x-large;
 }
 
-.postbox-details__text>ol {
+.postbox-details__text > ol {
   list-style-type: number;
 }
-.postbox-details__text>ol>ol {
+.postbox-details__text > ol > ol {
   list-style-type: lower-alpha;
 }
 
@@ -24393,8 +24393,8 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 
 .postbox-details__text ol li::marker {
   margin-right: 10px;
-    color: var(--tp-title);
-    width: 1.2em;
+  color: var(--tp-title);
+  width: 1.2em;
 }
 .postbox-details__text ul li::before {
   content: "";
@@ -24416,4 +24416,8 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-size: 17px;
   line-height: 28px;
   color: var(--tp-text-primary);
+}
+
+.movie-slider-thumb:not(.slick-current) {
+  opacity: 1;
 }
