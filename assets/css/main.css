@@ -10417,7 +10417,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   letter-spacing: -0.01em;
   color: var(--tp-title);
   font-family: var(--tp-ff-didoneright);
-  margin-top: 100px;
+  margin-top: 30px;
 }
 @media (max-width: 767px) {
   .postbox-details__title {
