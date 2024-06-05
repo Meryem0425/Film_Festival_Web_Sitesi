@@ -497,7 +497,7 @@ ul {
 
 p {
   font-family: var(--tp-ff-p);
-  font-size: 14px;
+  font-size: 12pt;
   font-weight: 400;
   color: var(--tp-text-body);
   margin-bottom: 15px;
@@ -10118,7 +10118,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .postbox__text p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 12pt;
   line-height: 1.8;
   color: var(--tp-text-primary);
   margin-bottom: 28px;
@@ -10384,7 +10384,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .postbox-details__text p {
   font-weight: 500;
-  font-size: x-large;
+  font-size: 12pt;
   line-height: 28px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -10432,7 +10432,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .postbox-details__qoute-text p {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 15pt;
   line-height: 40px;
   font-family: var(--tp-ff-didoneright);
 }
@@ -22140,7 +22140,7 @@ html[tp-theme="tp-theme-light"] .postbox__comment ul li:not(:last-of-type) {
   display: inline-block;
 }
 .tp-project-5-2-title-sm {
-  font-size: 30px;
+  font-size: 20pt;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1px;
@@ -22150,22 +22150,22 @@ html[tp-theme="tp-theme-light"] .postbox__comment ul li:not(:last-of-type) {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-project-5-2-title-sm {
-    font-size: 22px;
+    font-size: 18pt;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-project-5-2-title-sm {
-    font-size: 40px;
+    font-size: 15pt;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-project-5-2-title-sm {
-    font-size: 35px;
+    font-size: 19pt;
   }
 }
 @media (max-width: 767px) {
   .tp-project-5-2-title-sm {
-    font-size: 40px;
+    font-size: 22pt;
   }
 }
 .tp-project-5-2-btn {
@@ -24365,7 +24365,7 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 .postbox-details__text ul,
 .postbox-details__text ol {
   list-style: none;
-  font-size: x-large;
+  font-size: 12pt;
 }
 
 .postbox-details__text > ol {
