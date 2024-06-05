@@ -813,6 +813,48 @@
     ],
   });
 
+  // Anasayfa sponsorlar slide
+  $(".sponsor-slider").slick({
+    slidesToShow: 5,
+    infinite: true,
+    arrows: false,
+    buttons: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {    slidesToShow: 5},
+      },
+      {
+        breakpoint: 992,
+        settings: {slidesToShow: 5},
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
+  });
+// Ensure images keep their aspect ratio with a fixed height of 150px
+$(".sponsor-slider .slick-slide img").each(function() {
+  var $img = $(this);
+  var width = $img.width();
+  var height = $img.height();
+  var aspectRatio = width / height;
+  
+  $img.css({
+    height: "75px",
+    width: 75 * aspectRatio + "px"
+  });
+});
   //detay sayfasındaki slide
   $(".detail-slider").slick({
     cssEase: "linear",

@@ -12157,7 +12157,6 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   letter-spacing: -0.02em;
   color: var(--tp-common-white);
   font-family: var(--tp-ff-dmsans);
-  margin-bottom: 120px;
   text-transform: capitalize;
 }
 .tp-footer-title.big {
@@ -12634,11 +12633,11 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   line-height: 1;
   color: var(--tp-common-white);
   font-family: var(--tp-ff-didoneright);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .tp-footer-4__widget ul li {
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .tp-footer-4__widget ul li a {
   font-weight: 400;
@@ -14885,15 +14884,16 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 
 .ab-brand__item a {
-  height: 90px;
   line-height: 90px;
-  padding: 0px 55px;
-  border: 1px solid var(--tp-title);
+  /* padding: 0px 55px; */
+  /* border: 1px solid var(--tp-title); */
   border-radius: 1000px;
   display: inline-block;
   width: 100%;
   transition: 0.3s;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ab-brand__item a {
@@ -14909,14 +14909,14 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   color: var(--tp-title);
   transition: 0.3s;
 }
-.ab-brand__item a:hover {
+/* .ab-brand__item a:hover {
   background-color: var(--tp-bg-secondary);
-}
+} */
 /* .ab-brand__item a:hover svg {
   color: var(--tp-common-black);
 } */
 .ab-brand__plr {
-  padding: 85px;
+  padding: 25px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ab-brand__plr {
@@ -24294,9 +24294,9 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-family: var(--tp-ff-didoneright);
   font-size: 4rem;
   font-weight: 400;
-  color: var(--tp-title);
+  color: var(--tp-text-light);
   margin-bottom: 15px;
-  line-height: 26px;
+  line-height: normal;
 }
 .tp-footer-bg.tp-footer__customize p.description {
   font-family: var(--tp-ff-didoneright);
@@ -24322,4 +24322,47 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   .tp-header-3__logo img {
     width: 75px;
   }
+}
+
+@media (max-width: 767px) {
+  .tp-footer-title {
+      font-size: 40px;
+      margin-bottom: 10px;
+  }
+}
+
+.ab-brand__item a span img{
+  height: 75px;
+}
+
+
+
+.tp-footer-4__area {
+  padding: 30px 0 0;
+}
+
+/* Slider container */
+.sponsor-slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  cursor: grab;
+  user-select: none; /* İçeriğin seçilmesini engelle */
+}
+
+/* Individual slides */
+.sponsor-slider .slide {
+  margin: 0 100px; /* Her slayt arasına 10px boşluk ekler */
+  user-select: none; /* İçeriğin seçilmesini engelle */
+}
+
+/* Ensure images keep their aspect ratio with a fixed height of 150px */
+.sponsor-slider .slide img {
+  height: 150px;
+  width: auto;
+}
+
+/* Remove scrollbar */
+.sponsor-slider::-webkit-scrollbar {
+  display: none;
 }

@@ -1,65 +1,93 @@
-
-.container_timer{
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: grid;
-    grid-template-columns: 70%;
-    justify-content: center;
-    align-content: center;
-
+.container_timer {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 70%;
+  justify-content: center;
+  align-content: center;
 }
 .demo-bg {
-    opacity: 0.3;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-  }
-.heading{
-    color: #fff;
-    font-size: 40px;
-    font-weight: lighter;
-    text-align: center;
-    letter-spacing: 6px;
-    word-spacing: 6px;
-    margin-bottom: 25px;
+  opacity: 0.3;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
 }
-.description{
-    color: #bababa;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-family: Lucida Sans;
+.heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  margin-bottom: 25px;
+}
+.description {
+  color: #bababa;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: Lucida Sans;
 }
 .timer {
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-.sub_timer{
-    background: rgba(255, 255, 255, 0.19);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    overflow: hidden;
-    flex: 0 200px;
+.sub_timer {
+  background: rgba(255, 255, 255, 0.19);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 0 150px;
 }
-.digit{
-    color: #fff;
-    font-weight: lighter;
-    font-size: 70px;
-    text-align: center;
-    padding: 2.5rem 0;
+.digit {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  padding: 1.5rem 0;
 }
-.digit_name{
-    color: #000;
-    background: #fff;
-    margin: 0px;
-    text-align: center;
-    padding: 0.6rem 0;
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.digit_name {
+  color: #000;
+  background: #fff;
+  margin: 0px;
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 1200px) {
+  .sub_timer {
+    flex: 0 150px;
+  }
+  .digit {
+    font-size: 60px;
+    padding: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .sub_timer {
+    flex: 0 130px;
+  }
+  .digit {
+    font-size: 65px;
+    padding: 10%;
+  }
+  .timer {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sub_timer {
+    flex: 0 100px;
+  }
+  .digit {
+    font-size: 40px;
+    padding: 10%;
+  }
 }
