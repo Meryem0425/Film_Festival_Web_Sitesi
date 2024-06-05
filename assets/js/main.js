@@ -819,7 +819,14 @@
     infinite: true,
     arrows: false,
     buttons: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    pauseOnHover: false,
     variableWidth: true,
+    swipeToSlide: true,
+    centerMode: true /* Slider'ı merkezler */,
+    centerPadding: "10px",
     responsive: [
       {
         breakpoint: 1200,

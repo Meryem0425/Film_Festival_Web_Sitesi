@@ -10417,7 +10417,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   letter-spacing: -0.01em;
   color: var(--tp-title);
   font-family: var(--tp-ff-didoneright);
-  margin-top: 20px;
+  margin-top: 100px;
 }
 @media (max-width: 767px) {
   .postbox-details__title {
@@ -24368,13 +24368,15 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-size: x-large;
 }
 
-.postbox-details__text ol {
-  counter-reset: item; /* Resets the counter at the beginning of the outer ordered list */
+.postbox-details__text>ol {
+  list-style-type: number;
+}
+.postbox-details__text>ol>ol {
+  list-style-type: lower-alpha;
 }
 
-.postbox-details__text ol li ol {
+.postbox-details__text ol.latter {
   list-style-type: lower-alpha; /* Use lowercase alphabetic characters for nested ordered lists */
-  counter-reset: item; /* Reset the counter for nested ordered lists */
 }
 
 .postbox-details__text ul li,
@@ -24389,6 +24391,11 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-weight: 600;
 }
 
+.postbox-details__text ol li::marker {
+  margin-right: 10px;
+    color: var(--tp-title);
+    width: 1.2em;
+}
 .postbox-details__text ul li::before {
   content: "";
   display: block;
@@ -24400,22 +24407,6 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   top: 50%;
   left: -20px;
 }
-
-.postbox-details__text ol li {
-  counter-increment: item; /* Increment the counter for each list item */
-}
-
-.postbox-details__text ol li::before {
-  content: counter(item) "."; /* Display the counter value */
-  margin-right: 10px;
-  color: var(--tp-title);
-  width: 1.2em;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 15px; /* Adjust this value as needed */
-  left: -20px;
-}
-
 .postbox-details__text_title {
   color: var(--tp-title);
 }
