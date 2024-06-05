@@ -823,11 +823,11 @@
     responsive: [
       {
         breakpoint: 1200,
-        settings: {    slidesToShow: 5},
+        settings: { slidesToShow: 5 },
       },
       {
         breakpoint: 992,
-        settings: {slidesToShow: 5},
+        settings: { slidesToShow: 5 },
       },
       {
         breakpoint: 768,
@@ -843,18 +843,18 @@
       },
     ],
   });
-// Ensure images keep their aspect ratio with a fixed height of 150px
-$(".sponsor-slider .slick-slide img").each(function() {
-  var $img = $(this);
-  var width = $img.width();
-  var height = $img.height();
-  var aspectRatio = width / height;
-  
-  $img.css({
-    height: "75px",
-    width: 75 * aspectRatio + "px"
+  // Ensure images keep their aspect ratio with a fixed height of 150px
+  $(".sponsor-slider .slick-slide img").each(function () {
+    var $img = $(this);
+    var width = $img.width();
+    var height = $img.height();
+    var aspectRatio = width / height;
+
+    $img.css({
+      height: "75px",
+      width: 75 * aspectRatio + "px",
+    });
   });
-});
   //detay sayfasındaki slide
   $(".detail-slider").slick({
     cssEase: "linear",
@@ -889,7 +889,7 @@ $(".sponsor-slider .slick-slide img").each(function() {
 		<path d="M9.35352 1.5L14.9999 6.99954L9.35352 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		</svg></button>`,
     centerMode: true,
-    slidesToShow: 1
+    slidesToShow: 1,
   });
 
   ////////////////////////////////////////////////////

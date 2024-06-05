@@ -10413,7 +10413,7 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .postbox-details__title {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 1;
   letter-spacing: -0.01em;
   color: var(--tp-title);
@@ -11500,7 +11500,6 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
   letter-spacing: -0.01em;
   color: var(--tp-title);
   font-family: var(--tp-ff-didoneright);
-  margin-bottom: 90px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -24365,4 +24364,38 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 /* Remove scrollbar */
 .sponsor-slider::-webkit-scrollbar {
   display: none;
+}
+
+.postbox-details__text ul {
+  list-style: none;
+  font-size: x-large;
+}
+.postbox-details__text ul li {
+  position: relative;
+  margin: 20px 0;
+}
+.postbox-details__text ul li span {
+  color: var(--tp-title);
+  font-weight: 600;
+}
+.postbox-details__text ul li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background: var(--tp-title);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -20px;
+}
+.postbox-details__text_title{
+  color: var(--tp-title);
+}
+
+.postbox-details__text_small{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--tp-text-primary);
 }
