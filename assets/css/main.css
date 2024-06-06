@@ -23710,7 +23710,7 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   display: flex;
 }
 .tp-header-4__area .tp-header-4__menu > nav > ul > li > a {
-  font-size: 0.9rem !important;
+  font-size: 0.9rem ;
   color: var(--tp-heading-primary);
   font-weight: bold;
   font-family: Verdana, sans-serif;
@@ -24434,4 +24434,14 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   .blog-standard__area {
     padding-top: 50px;
   }  
+}
+@media (max-width: 1350px) {
+  .tp-header-4__area .tp-header-4__menu > nav > ul > li > a {
+    font-size: 0.7rem ;
+  }
+}
+
+#smooth-content {
+  padding-top: 1px;
+  margin-top: -1px;
 }
