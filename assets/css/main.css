@@ -25,7 +25,7 @@
 		2.3 Buttons
 		2.4 Animations
 		2.5 Preloader
-		2.6 Background 
+		2.6 Background
 		2.7 Carousel
 		2.8 Nice Select
 		2.9 Pagination
@@ -371,7 +371,7 @@ li,
   --tp-gold-opacity-5: #ffde5969;
 
   --tp-title: #836331;
-  --tp-text-primary: #d0bea2;
+  --tp-text-primary: #c2a67b;
   --tp-text-secondary: #4d473f;
   --tp-text-light: #ffffff;
   --tp-bg-primary: #e4e6dc;
@@ -405,7 +405,7 @@ html {
 }
 
 /*---------------------------------
-	typography css start 
+	typography css start
 ---------------------------------*/
 body {
   font-family: var(--tp-ff-body);
@@ -439,7 +439,9 @@ body {
 .scrollbar-tracks {
   background: transparent !important;
 }
-
+main {
+  min-height: 70vh;
+}
 img {
   max-width: 100%;
 }
@@ -860,7 +862,7 @@ div.demo img {
 }
 
 /*----------------------------------------
-    Body Overlay 
+    Body Overlay
 -----------------------------------------*/
 .body-overlay {
   background-color: var(--tp-common-black);
@@ -8139,9 +8141,9 @@ a.ui-button:active {
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xclip 
+xclip
 
 -------------------------------- */
 .cd-headline.clip span {
@@ -8201,7 +8203,7 @@ body.tp-magic-cursor #magic-cursor {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Ball view 
+/* Ball view
 ============= */
 #ball .ball-view {
   position: absolute;
@@ -8220,7 +8222,7 @@ body.tp-magic-cursor #magic-cursor {
   font-size: 19px;
 }
 
-/* Ball drag 
+/* Ball drag
 ============= */
 #ball .ball-drag {
   position: absolute;
@@ -8267,7 +8269,7 @@ body.tp-magic-cursor #magic-cursor {
   transition: all 0.25s;
 }
 
-/* Ball close 
+/* Ball close
 ============== */
 #ball.ball-close-enabled {
   opacity: 1 !important;
@@ -8728,7 +8730,6 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
     margin: 0 15px;
   }
 }
-
 
 .tp-header-4__menu > nav > ul > li .submenu {
   position: absolute;
@@ -9821,6 +9822,8 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 .postbox__thumb img {
   border-radius: 20px 20px 0 0;
   width: 100%;
+  height: 400px;
+  object-fit: contain;
 }
 .postbox__thumb .play-btn {
   position: absolute;
@@ -9922,6 +9925,11 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .postbox__title a:hover {
   background-size: 0% 2px, 100% 2px;
+}
+.postbox__title span {
+  font-size: 12pt;
+  margin-left: 20px;
+  font-family: var(--tp-ff-p);
 }
 .postbox__meta {
   margin-bottom: 10px;
@@ -11364,6 +11372,8 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .tp-blog-3__thumb img {
   border-radius: 20px;
+  height: 200px;
+  object-fit: contain;
 }
 .tp-blog-3__content-title {
   font-weight: 500;
@@ -12615,11 +12625,16 @@ html[tp-theme="tp-theme-light"] .cursor-white #ball {
 }
 .tp-footer-4__social a span svg {
   width: 18px;
+  fill: var(--tp-text-light);
+  height: 20px;
 }
 .tp-footer-4__social a:hover {
   background-color: var(--tp-common-white);
   color: var(--tp-common-black);
   border-color: var(--tp-common-white);
+}
+.tp-footer-4__social a:hover span svg {
+  fill: var(--tp-common-black);
 }
 .tp-footer-4__widget-title {
   font-weight: 500;
@@ -23718,10 +23733,10 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   font-family: Verdana, sans-serif;
 }
 
-.carousel-control-prev .carousel-control-prev-icon,
+/* .carousel-control-prev .carousel-control-prev-icon,
 .carousel-control-next .carousel-control-next-icon {
-  filter: invert(1); /* İkon rengini siyah yapar */
-}
+    filter: invert(1); 
+} */
 .tp-footer-4__widget-mail {
   text-wrap: nowrap;
 }
@@ -23879,7 +23894,7 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   content: "";
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100%;
   background: linear-gradient(270deg, var(--tp-common-white), transparent);
   right: 0;
@@ -23899,11 +23914,11 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 .jury__area .postbox__item {
   display: flex;
 }
+
 .jury__area .postbox__thumb img {
   border-radius: 20px 0 0 20px;
-  height: 100%;
-  min-width: 300px;
-  object-fit: cover;
+  height: 270px;
+  width: 300px;
 }
 .jury__area .postbox__item:nth-child(2n) {
   display: flex;
@@ -23912,6 +23927,22 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 .jury__area .postbox__item:nth-child(2n) .postbox__thumb img {
   border-radius: 0 20px 20px 0;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .jury__area .postbox__item,
+  .jury__area .postbox__item:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .jury__area .postbox__thumb {
+    width: 100%;
+    text-align: center;
+  }
+  .jury__area .postbox__thumb img,
+  .jury__area .postbox__item:nth-child(2n) .postbox__thumb img {
+    border-radius: 0;
+  }
 }
 .sidebar__wrapper {
   margin-top: 40px;
@@ -23959,9 +23990,9 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   justify-content: space-around !important;
 }
 
-.carousel-indicators [data-bs-target] {
+/* .carousel-indicators [data-bs-target] {
   background-color: #7f7f7f;
-}
+} */
 .movie-slider .carousel-indicators li.slick-active {
   opacity: 1;
 }
@@ -24383,7 +24414,9 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
 }
 
 .postbox-details__text ul li span,
-.postbox-details__text ol li span {
+.postbox-details__text ol li span,
+.postbox-details__text ul li strong,
+.postbox-details__text ol li strong {
   color: var(--tp-title);
   font-weight: 600;
 }
@@ -24562,4 +24595,26 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   right: 25px;
   top: 10px;
   opacity: 0;
+}
+
+.postbox-details__area h1,
+.postbox-details__area h2,
+.postbox-details__area h3,
+.postbox-details__area h4,
+.postbox-details__area h5,
+.postbox-details__area h6 {
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--tp-title);
+  font-family: var(--tp-ff-didoneright);
+  margin-top: 30px;
+}
+
+.announcement-img {
+  text-align: center;
+}
+.postbox__content {
+  padding: 30px 40px 40px 40px;
+  flex: 1;
 }
