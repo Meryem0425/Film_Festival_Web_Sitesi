@@ -24159,7 +24159,7 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   position: absolute;
   bottom: 100%;
   border: var(--tp-common-white) 1px solid;
-  border-bottom: 0;
+  border: 0;
   left: -1px;
 }
 .tabbed-box .tabs li {
@@ -24201,14 +24201,22 @@ html[tp-theme="tp-theme-light"] .tp-offcanvas-update-bg-2 .tp-main-menu-mobile >
   display: none;
 }
 
+.movies-tab > ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .movies-tab > ul > li {
   display: flex;
   height: 200px;
   padding: 20px;
+  flex: 1 33%;
+  border: 1px solid var(--tp-bg-secondary);
 }
-.movies-tab > ul > li:nth-child(even) {
+/* .movies-tab > ul > li:nth-child(even) {
   background: #0000002e;
-}
+} */
 .movies-tab > ul > li > div > img {
   height: 100%;
 }
